@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+
+    letter-spacing: 2px;
+}
+   
+.foto-perfil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 10%;
+    height: auto;
+    max-width: 100px;
+
+    border-radius: 50%;
+}
+
+.nome {
+    text-align: center;
+    
+    padding: 30px;
+    font-size: 28px;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid blueviolet;
+    border-width: 2px;
+    padding: 20px;
+
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+
+    color: white;
+    transition: color 1s;
+}
+
+a:hover {
+    color: blueviolet;
+
+    background-color: black;
+}
+
