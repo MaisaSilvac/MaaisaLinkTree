@@ -1,58 +1,89 @@
-body {
-    background-color: black;
+*{ 
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-    color: aliceblue;
-    font-family: "Open Sans", sans-serif;
+  body{
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  }
 
-    letter-spacing: 2px;
-}
-   
-.foto-perfil {
+  .gato{
+    position: absolute;
+    background-image: url("/img/barrigudin.png");
+    background-size: cover;
+    border-radius: 10px;
+    animation: fall 4s linear infinite;
+    z-index: -1;
+  }
+  @keyframes fall {
+    0% {
+      transform: translate(50%, 50%);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translate(50%, 1000%);
+      opacity: 0;
+    }
+  }
+
+  .foto-perfil {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+  
     margin-top: 10%;
     height: auto;
     max-width: 100px;
-
+  
     border-radius: 50%;
-}
-
-.nome {
-    text-align: center;
+    z-index: 999;
     
+
+  }
+  
+  .nome {
+    text-align: center;
+    color: rgb(129, 39, 114);
     padding: 30px;
     font-size: 28px;
-}
-
-.links {
+    z-index: 999;
+    
+  }
+  
+  .links {
     text-align: center;
     margin-top: 20px;
-    border: 1px solid blueviolet;
+    border: 2px solid rgb(58, 55, 61);
+    background: transparent;
     border-width: 2px;
     padding: 20px;
-
+  
     width: 290px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+  
     border-radius: 40px;
-
+  
     font-size: 18px;
-}
+    transition: all 0.2s ease-in-out;
+  
+  }
 
-a {
+  a {
     text-decoration: none;
-
-    color: white;
+  
+    color: rgb(141, 52, 127);
     transition: color 1s;
-}
-
-a:hover {
-    color: blueviolet;
-
-    background-color: black;
-}
-
+    text-shadow: rgb(141, 52, 127);
+  }
+  
+  a:hover {
+    color: rgb(129, 39, 114);
+    box-shadow: 0 0 20px rgb(129, 39, 114), inset  0 0 15px rgb(129, 39, 114);
+    text-shadow: 0 0 15px rgb(129, 39, 114);
+  }
+  
